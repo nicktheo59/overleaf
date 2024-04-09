@@ -73,62 +73,19 @@ This resource highlights the necessity for a deeper exploration. This project wi
 
 \section{Aims and Objectives} \label{section-with-figure}
 
-Due to unit cell size varying inversely with the resulting resonant frequency value, the focus will be on producing a holistic framework for Metasurface design, to ensure the platform has compatibility with a variety of target devices.
-% semiconductors across the electromagnetic spectrum
+Metamaterials are unique for the fact their tailored electromagnetic response can be scaled across the electromagnetic spectrum. Resonant structures may be varied by way of material choices, unit cell geometry and size. Unit cell sizes vary inversely with the resulting resonant frequency value. 
+For TPV cells based on Gallium antimonide (GaSb) this would be around 176.5 THz or 1.7 $\mu$m; a unit cell period would need to be smaller than this length. Selected fabrication methods should be commensurate with the resolution requirements of geometric features within a unit cell. 
 
-The focus of designs that adapt to environmental changes and requirement of specialist equipment required for nanometer structures shall prompt experimental work to begin in lower frequency ranges with the intention of moving onto higher frequency regimes:
+The focus of the project is to construct a framework of metasurface design; to find absorbers that closely match target photovoltaic cells. Robustness of match will be investigated in the presence of environmental changes to the system; when changes are detected, designs serve as sensors. Tunability mechanisms for measuring or mitigating the effect of environment changes on electromagnetic response will be considered. These include fermi level \cite{Nie2024}, doping concentrations \cite{MoS2}, mechanical strain \cite{Amir2023}, and others.
 
-\begin{table}[h]
-\centering
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{Frequency Regime} & \textbf{Wavelength Range} & \textbf{Frequency Range} \\ \hline
-L-Band to S-/C- Band & 30cm to 6cm & 1 GHz to 5 GHz \\ \hline
-Microwave to Mid Infrared & 1mm to 1 $\mu$m & 300 GHz to 300 THz \\ \hline
-Far Infrared to Visible & 100$\mu$m to 380nm & 3 THz to 790 THz  \\ \hline
-\end{tabular}
-\caption{Summary of Frequency Regimes for project milestones}
-\label{tab:frequency_regimes}
-\end{table}
+For experimental validation, in Year 1 (2024) fabrication methods to be ultilised are already available. UV photolithography is anticipated to serve for devices with a resolution requirement of 5-10$\mu$m, while Atomic Layer Deposition will conformally coat an entire structure with material in 1nm steps. 
 
+In following years alternate techniques e.g. Focused Ion Beam (FIB) are anticipated to become available to attain sub-1.7 $\mu$m geometric features. Given this initial constraint, the primary objective is to fabricate devices that are scaled up by x20 times. Through simulation work, equivalence between scaled up and scaled down designs shall be demonstrated. 
 
-To accelerate experimental validation, within Year 1 work will begin on physically larger Surface Acoustic Wave (SAW) devices (millimetres to centimetres). The influence of environment - ice, humidity, dirt and contaminants - shall be feasibly studied at this scale for how they alter metasurface absorption profiles. It is essential to understand and how these factors will play a role in real-world [thermo]photovoltaic applications - since coupling modes would be confounded by environmental factors, most likely. When resonator devices `couple' there are emergent resonant modes. Coupling by Surface Acoustic Waves not only modulates resonator eigenfrequencies (dispersive coupling) but also their damping (dissipative coupling) \cite{Rieger2022SurfaceAW}. Metasurface designs that are `optimised' would yield specific absorptivity and emissivity characteristics, in this instance, for efficient energy harvesting and/or sensing at and around these frequencies. 
+To accelerate a proficiency in running a sensing experiment, work will begin on readily available Surface Acoustic Wave (SAW) devices (millimetres to centimetres in size). The influence of water, fog, and ice will be studied for how they alter absorptivity. It is essential to consider how environment factors will play a role in real-world thermophotovoltaic applications - as coupled modes would be confounded by environmental factors, most likely. When resonator devices `couple' there are emergent resonant modes. Coupling by Surface Acoustic Waves not only modulates resonator eigenfrequencies (dispersive coupling) but also their damping (dissipative coupling) \cite{Rieger2022SurfaceAW}. `Optimised' metasurface designs would yield specific absorptivity and emissivity characteristics, for efficient energy harvesting (or sensing) at these frequencies. 
 
-% This is wehere the environmental sensing will be demonstrated. Instead of framing this around a collaboration with on-going research, it is better to link this with environmental sensing for (thermo)photovoltaics. Is it humidity, icing, contamination, dirt, combination of these etc.. that will be sensed? If so, what will be designed/optimised? How it will be tested/characterised?
+Deep Learning methods for the objective of parameter search through inverse design is emerging as a viable alternative to traditional Particle-In-Cell-Simulations \cite{Nadell2019}. In the context of thermophotovoltaic systems this would relate to designing refractory metamaterials capable of surviving high radiator temperatures while attaining suitable emitter frequencies, to match photovoltaic bandgaps (Coutts1999 \cite{coutts1999}).
 
-
-\section*{L-Band (Year 0.5 to 1.5):}
-\begin{itemize}
-    \item Objective 1: Sense environment changes, with a focus on water and ice.
-    \begin{itemize}
-        \item Utilise resonance response in the presence of droplets, ice crystals and piezoelectric acoustic waves.
-    \end{itemize}
-    \item Objective 2: Measurement and detection of ice cracks.
-    \begin{itemize}
-        \item Draw parallels between photovoltaic defect detection.
-    \end{itemize}
-    \item Aim: Develop a holistic design framework to equip a multi-functional [MM-SAW] device with sensing capability.
-\end{itemize}
-
-\section*{Microwave to Infrared (Year 1 to 2.5):}
-\begin{itemize}
-    \item Objective 1:
-     Maximize thermal emission in the atmospheric window to radiate heat away.
-    \begin{itemize}
-    \item Advanced materials designed for passive radiative cooling can radiate heat directly into the coldness of space through an infrared range where the atmosphere is transparent to thermal radiation \cite{Rephaeli2014RadiativeCooling}.
-    \end{itemize}
-    \item Objective 2: Implement active thermal capture for thermoelectric conversion through photon recycling.
-    \item Aim: Expand the framework - design, fabrication, characterisation.
-\end{itemize}
-
-\section*{Infrared to Visible (Year 2.5 to 3):}
-\begin{itemize}
-    \item Objective 1: Simulate enhanced photovoltaic efficiency through enhanced light absorption, amorphous silicon is a suitable device-coupling-candidate.
-    \item Objective 2: Investigate feasibility of enhanced efficiency through light capture and (non-lossy) frequency conversion processes i.e. SHG.
-    \item Aim: Expand the framework - exploration and design.
-\end{itemize}
-\vspace{5mm}
-Deep Learning methods for the objective of parameter search through inverse design is emerging as a viable alternative to traditional Particle-In-Cell-Simulations \cite{Nadell2019}. In the context of thermophotovoltaic systems this would relate to designing refractory metamaterials capable of surviving high radiator temperatures while attaining suitably (low) emitter frequencies, to match the photovoltaic bandgap (Coutts1999 \cite{coutts1999}).
 \begin{figure} [!h]
 	\centering
 	%\captionsetup{justification=centering}
@@ -138,64 +95,85 @@ Deep Learning methods for the objective of parameter search through inverse desi
 	\label{some-figure}
 \end{figure}
 
-In Year 2 individual lab-scale demonstrations will begin, with an emphasis on performant designs for mission-critical aspects of the thermophotovoltaic system; photon recycling, higher radiator temperatures, and targeted bandgap-matching.
-Building on the environmental sensing achievements in Year 1, there shall be a consideration for necessary and achievable value-adding sensing or detection capabilities within the context of envisioned operational settings for [thermo]photovoltaic systems. The focus will be to identify sensing capabilities that are synergistic and can be readily integrated via absorption tuning. For example, carbon auditing.
-% , particulate presence, or pollutant concentrations. 
+By Year 2.5 (July 2025) nano-scale demonstrations will begin, with an emphasis on performant designs for mission-critical aspects of the thermophotovoltaic system; photon recycling, higher radiator temperatures, and targeted bandgap-matching. There shall be a consideration for necessary and achievable sensing or detection capabilities within the context of envisioned operational settings for TPV systems. The focus will be to identify sensing capabilities that are can be readily integrated via absorption tuning. For example, carbon auditing. 
 
-One envisioned setting for thermophotovoltaics is industrial steel manufacture. Carbon auditing would relate to the varying rate of waste heat recycling. It may prove useful to account this for auditing purposes.
-% Particulate composition is also of interest, since air quality is a growing concern \cite{sokhi2022advances}. Constituent material choices for metamaterial composites are themselves subject to changes in temperature, voltage, pump light, and thus may be considered ‘active’ \cite{wang2023broadband}. Through thermally-induced phase changes between amorphous/crystalline states of their chosen substrate, Patel2021 were able to measure concentration differences in haemoglobin via refractive index measurements - using precisely tuned shifts in the absorption spectrum over a reference range of wavelengths \cite{Patel2021}. This mechanism, and others, shall be investigated for airborne particle concentrations. Existing detection methods for the seven green house gases would be reviewed. For instance, the criteria of ‘dangerous’ oxidant levels in the atmosphere is a reading above 0.15 ppm measured within 1 hour and involves manually-operated equipment \cite{manahan_environmental_chemistry}; pollutant levels in many locations is very likely undermonitored.
-\\
-In Year 2.5 to 3 attention shall be paid to commercial fabrication techniques. One ‘roll-to-roll’ polymer-based metasurface has been identified \cite{Ma2023}. The author reinforces the potential for ‘trench-like’ structures to be redesigned with active thermal management - a statement that echoes the research gap being addressed in this proposal.
+One envisioned setting for thermophotovoltaics is industrial steel manufacture. Carbon auditing would relate to the varying rate of waste heat recycling. It may prove useful to account recycled heat for carbon auditing purposes. It is worth noting steel comes in various quality grades, due to energy savings higher quality steel could become more affordable, and higher uptake in quality steel can result in a lower need for steel use overall; consequently a smaller environmental footprint.
 
-        The primary question for scaled-up production is whether to recommend “Industry 4.0” or traditional manufacturing. Foundries vary widely in production volumes \cite{wiki:memsfoundries}; high volumes may infer low cost per unit albeit at high overhead. Alternatively, additive manufacturing unlocks ‘mass customisation’. This consideration may become crucial for market adoption at flexible production volumes.
+%Cite: Sir Harry Bhadeshia, Life scientific interview
 
+In Year 3 (2026) attention shall be paid to commercial fabrication techniques. One ‘roll-to-roll’ polymer-based metasurface has been identified \cite{Ma2023}. The author reinforces the potential for ‘trench-like’ structures to be redesigned with active thermal management - a statement that echoes the research gap addressed in this proposal.
 
+The primary question for scaled-up production is whether to recommend “Industry 4.0” or traditional manufacturing. Foundries vary widely in production volumes \cite{wiki:memsfoundries}; high volumes may infer low cost per unit albeit at high overhead. Alternatively, additive manufacturing unlocks ‘mass customisation’. This consideration may become crucial for market adoption at flexible production volumes.
+
+\section*{Design and `Scaled Up' Fabrication (Year 1 and 2):}
+\begin{itemize}
+	\item Aim: Create a dataset of proposed metasurface designs 
+    \item Objective 1: Using forward design, create simulations well matched to external quantum efficiency measurements for a variety of PV cells beginning with GaAs.
+    \begin{itemize}
+        \item Quantify the match between target and attained absorptivity response curves in terms of mean square error.
+    \end{itemize}
+    \item Objective 2: Fabricate three proposed designs in year 1 (2024) using photolithography and other readily available techniques.
+    \begin{itemize}
+        \item Use results from completed SAW device experiments to propose suitable sensing experiments for these devices.
+    \end{itemize} 
+    \item Objective 3: Through simulation, demonstrate correspondence between scaled up and scaled down versions of unit cell geometries. Seek to represent the mathematical relationship between geometrical features and resonant frequencies (wideband or narrowband), thereby demonstrating tunability.
+\end{itemize}
+\section*{`Scaled down' Fabrication and Characterisation (Year 2.5 and Year 3:}
+\begin{itemize}
+	\item Aim: Expand the framework - design, fabrication, characterisation.
+    \item Objective 4: By end of year 3 (2026) fabricate three nano-structured metasurface designs using FIB or Electron Beam Lithography (EBL).
+    \item Objective 5: Measure and characterise thermalisation loss / and suppression of the metasurface-PV system compared to the standalone PV cell.
+\end{itemize}
 \section{Indicative Methodology}
 
 
 \subsection{Literature Review}
 \begin{itemize}
-    \item Review literature on Metasurfaces, thermophotovoltaic systems, and environment sensing.
+    \item Review literature on Metasurface design and application of metasurfaces in thermophotovoltaic systems.
     \item Analyse relevant Machine Learning methods for parameter search in Metasurface design.
+    \item Investigate the current state and future prospects of sensing using metamaterials, particularly in the context of thermophotovoltaic systems.
+    \item Review fabrication techniques suitable for metasurface construction, with an emphasis on achieving the necessary geometric feature sizes.
+    \item Examine methods for tunability in metasurfaces, such as doping concentrations, bias voltage, and their implications for environmental sensing.
 \end{itemize}
 
 \subsection{Simulation and Modeling}
 \begin{itemize}
     \item Utilise simulation software to model and simulate proposed designs.
     \item Where possible validate simulations using data from real experiments or values obtained from published literature.
+    \item Refine the models based on feedback from fabrication and characterisation efforts.
+    \item Explore the scalability of unit cell designs through simulation, demonstrating the equivalence between scaled-up and scaled-down models and their resonant frequencies.
     \item Establish a comprehensive understanding of solver operations in simulation software and physical models.
 \end{itemize}
 
 
 \subsection{Experimental Validation}
 \begin{itemize}
-    \item Align with ongoing research efforts at Smart Materials \& Surfaces Lab to begin experiments.
-    \item Progressively work towards experiments at higher frequencies.
+    \item In Year 1, utilize available UV photolithography and Atomic Layer Deposition techniques for initial metasurface fabrication, targeting larger unit cell structures suitable for scaled-up designs.
+    \item Begin preliminary environmental sensing experiments using available Surface Acoustic Wave devices, focusing on the impact of environmental changes on absorptivity.
+    \item By Year 2.5, transition to fabrication techniques capable of sub-micron resolution, like Focused Ion Beam, to create nano-structured metasurfaces for TPV applications.
 \end{itemize}
 
 \subsection{Environmental Sensing Development}
 \begin{itemize}
-    \item Develop algorithms for sensing, considering real-world scenarios.
+    \item Develop sensing algorithms to detect and quantify environmental changes, leveraging the tunable properties of metasurfaces.
+    \item Integrate these sensing capabilities into the metasurface design to facilitate environmental monitoring.
 \end{itemize}
 
 \subsection{Collaboration \& Characterisation}
 \begin{itemize}
-    \item Collaborate with expert researchers to gain access and training on specialist lab equipment (e.g. new SHG capabilities expected in Durham by Autumn 2024)
+    \item Collaborate with expert researchers to gain access and training to any specialist equipment that is required.
 \end{itemize}
 
 \subsection{Application of Metasurface Framework}
 \begin{itemize}
-    \item Design architectures for specific frequency regimes, focusing on environment sensing, defect detection, absorption, passive cooling, and thermal energy conversion.
+    \item Apply the developed framework to recommend and fabricate structures with specific functionalities, namely enhanced TPV efficiency.
+    \item Consider the suitability of these designs within industrial settings, such as steel manufacturing.
 \end{itemize}
 
-\subsection{Lab-Scale Fabrication}
+\subsection{Lab-Scale to Commercial Fabrication Consideration}
 \begin{itemize}
-    \item Initiate lab-scale demonstrations, tailoring the metasurface platform to elements that contribute significantly to TPV system efficiency.
-\end{itemize}
-
-\subsection{Commercial Fabrication Consideration}
-\begin{itemize}
-    \item Evaluate viable manufacturing techniques, for consideration of routes to market.
+    \item In Year 3 (2026), evaluate the feasibility of transitioning from lab-scale fabrication to commercial production, considering techniques such as roll-to-roll manufacturing for polymer-based metasurfaces.
+    \item Evaluate the potential for industrial upscaling, focusing on cost and adaptability to different production volumes and market needs.
 \end{itemize}
 
 
